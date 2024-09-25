@@ -1,0 +1,107 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Image and Text Layout</title>
+    <style>
+        body {
+            
+            background-color: #282222;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            background-color: white;
+            width: 80%;
+            max-width: 2000px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+
+        }
+        .text-section .close-button {
+            position: absolute;
+            top: 60px;
+            right: 180px;
+            font-size: 40px;
+            color: #504e4e;
+            cursor: pointer;
+        }
+        .text-section .close-button:hover {
+            color: rgb(176, 164, 164); 
+        }
+         .image-section {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .image-section img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .text-section {
+            width: 40%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+        .text-section .fa-user{
+            position: absolute;
+            top: 90px;
+            right: 600px;
+            font-size: 27px; 
+        }
+        .text-section h2 {
+            font-size:100%;
+            font-family: sans-serif;
+            color: #333;
+            position: relative;
+            right: -60px;
+            top: 10px;
+        }
+        .text-section p {
+           flex-grow: 1;
+           font-size: 10%;
+           color: #333;
+           line-height: 1.5;
+           position: relative;
+           top: 60%;
+           text-align: justify;
+        }
+        .text-section .date {
+            color: #999;
+            font-size:60%;
+            font-family: sans-serif;
+            position: relative;
+            right: -60px;
+            top: -10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="image-section">
+        <img src="image.jpeg" alt="image">
+    </div>
+    <div class="text-section">
+    <div class="close-button">&times;</div>
+        <i class="fa-regular fa-user"></i>
+        <h2>Jane Doe</h2>
+        <p class="date">1st January, 2024</p>
+        <p style="font-size:medium; font-family:Arial, Helvetica, sans-serif;">Marly was the kind of person who had a natural ability to make everyone around her feel special. Her infectious laughter, her kind eyes, and her radiant smile could brighten the darkest of days. She had a way of making you feel heard, understood, and valued. [Name] was someone who truly cared, who invested in people, and who saw the best in everyone.</p>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
