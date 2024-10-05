@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        .left
+        {
+            float: left;
+            width: 50%;
+            padding-left: 1em;
+            padding-top: 1em;
+            border-radius: 20%;
+        }
+        .right
+        {
+            float: right;
+            width: 50%;
+            padding-right: 1em;
+            padding-top: 1em;
+        }
+        
+    
+
+body {
+    background-color: #414040;
+}
+
+    .product-page {
+    padding: 60px;
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+    width: 700px;
+    /* margin-bottom:10px; */
+    border-radius: 10px;
+    margin-left: 19%;
+    height: 700px;
+}
+
+h1 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    font-size: medium;
+    position: relative;
+    color: black;
+    top: -38px;}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 9px;
+    justify-content: center;
+    size-adjust: 30px;
+   
+
+}
+
+.product-item {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    position: relative;
+    top: -35px;
+    width: 90%;
+    
+}
+
+.product-item img {
+    width: 60%;
+    height: auto;
+    /* border-radius: 8px; */
+    margin-bottom: 15px;
+}
+
+.product-name {
+    font-size: 14px;
+    /* font-weight:; */
+    color: #3a363d;
+    margin-bottom: 15px;
+}
+
+.product-price {
+    font-size: 14px;
+    color: #8836ba;
+    margin-bottom: -19px;
+    padding-bottom: -2%;
+    
+}
+
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    max-width: 600px;
+    height: 700px;
+  margin-left: 14%;
+}
+ .close-button {
+            position: absolute;
+            top: 30px;
+            right: 150px;
+            font-size: 30px;
+            color: #504e4e;
+            cursor: pointer;
+        }
+.close-button:hover {
+            color: rgb(176, 164, 164); 
+        }
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.item-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.item-info img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.item-name {
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.item-price {
+    font-size: 16px;
+    color: #9f2cb4;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: none;
+    height: 60px;
+}
+
+.payment-details {
+    display: flex;
+    gap: 20px;
+}
+
+.payment-details div {
+    flex: 1;
+}
+
+button {
+    width: 100%;
+    background-color: #9038c7;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #7e57c2;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <div class="left">
+            <div class="product-page" style="background-color: white;">
+                <h1>Express your condolences with a lovely arrangement.</h1>
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <div class="product-item">
+                        <img src="a.jpeg" alt="Lavender Classic Arrangement">
+                        <p class="product-name">Lavender Classic Arrangement</p>
+                        <p class="product-price">$75.00</p>
+                    </div>
+                    <!-- Repeat for other products -->
+                    <div class="product-item">
+                        <img src="a.jpeg" alt="Lavender Classic Arrangement">
+                        <p class="product-name">Lavender Classic Arrangement</p>
+                        <p class="product-price">$75.00</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="a.jpeg" alt="Lavender Classic Arrangement">
+                        <p class="product-name">Lavender Classic Arrangement</p>
+                        <p class="product-price">$75.00</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="a.jpeg" alt="Lavender Classic Arrangement">
+                        <p class="product-name">Lavender Classic Arrangement</p>
+                        <p class="product-price">$75.00</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="a.jpeg" alt="Lavender Classic Arrangement">
+                        <p class="product-name">Lavender Classic Arrangement</p>
+                        <p class="product-price">$75.00</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="a.jpeg" alt="Lavender Classic Arrangement">
+                        <p class="product-name">Lavender Classic Arrangement</p>
+                        <p class="product-price">$75.00</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="a.jpeg" alt="Lavender Classic Arrangement">
+                        <p class="product-name">Lavender Classic Arrangement</p>
+                        <p class="product-price">$75.00</p>
+                    </div>
+                    <!-- Repeat for other products -->
+                    <div class="product-item">
+                        <img src="a.jpeg" alt="Lavender Classic Arrangement">
+                        <p class="product-name">Lavender Classic Arrangement</p>
+                        <p class="product-price">$75.00</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="a.jpeg" alt="Lavender Classic Arrangement">
+                        <p class="product-name">Lavender Classic Arrangement</p>
+                        <p class="product-price">$75.00</p>
+                    </div>
+                    </div>
+                    <!-- Add more products as needed -->
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="form-container">
+                <div class="close-button">&times;</div>
+                <h2 style="color: #322f2f; font-size:150%;">Selected Item</h2>
+                <div class="item-info">
+                    <img src="a.jpeg" alt="Lavender Classic Arrangement">
+                    <span class="item-name">Lavender Classic Arrangement</span>
+                    <span class="item-price">$75.00</span>
+                </div>
+                <form>
+                    <label for="name";">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" style="background-color: rgb(234, 236, 252);" required>
+        
+                    <label for="delivery">Where should this be delivered?</label>
+                    <select id="delivery" name="delivery" style="background-color: rgb(234, 236, 252);"required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="home">Home</option>
+                        <option value="office">Office</option>
+                    </select>
+        
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" placeholder="Full delivery address" style="background-color:rgb(234, 236, 252);"required>
+        
+                    <label for="message">Message (Optional)</label>
+                    <textarea id="message" name="message" placeholder="Add message..."style="background-color: rgb(234, 236, 252);"></textarea>
+        
+                    <h3>Payment Information</h3>
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9876 5432" style="background-color:rgb(234, 236, 252);"required>
+        
+                    <div class="payment-details">
+                        <div>
+                            <label for="expiration">Expiration</label>
+                            <input type="text" id="expiration" name="expiration" placeholder="MM/YY"style="background-color:rgb(234, 236, 252);" required>
+                        </div>
+                        <div>
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="123" style="background-color: rgb(234, 236, 252);"required>
+                        </div>
+                    </div>
+        
+                    <button type="submit">Make Payment</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
